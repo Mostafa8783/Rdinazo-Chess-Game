@@ -1,19 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDHCLr4WO84IsdENcsKwx1pQXuRtUDLJx8",
-  authDomain: "rdinazo-chess.firebaseapp.com",
-  projectId: "rdinazo-chess",
-  storageBucket: "rdinazo-chess.firebasestorage.app",
-  messagingSenderId: "540475992058",
-  appId: "1:540475992058:web:9ff07119b24e378ccea643",
-  measurementId: "G-2BPC1VMNE1"
+  apiKey: "AIzaSyDgbmbJE6w5BybIuWk7gEc9zlJmQYtwKxM",
+  authDomain: "rdinazo-chess-game.firebaseapp.com",
+  projectId: "rdinazo-chess-game",
+  storageBucket: "rdinazo-chess-game.firebasestorage.app",
+  messagingSenderId: "469942196401",
+  appId: "1:469942196401:web:5e31b38db381f90b05aa90"
 };
 
 // Initialize Firebase
