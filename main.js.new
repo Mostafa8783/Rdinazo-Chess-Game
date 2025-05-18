@@ -1,0 +1,21 @@
+// js/firebase.js
+import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDgbmbJE6w5BybIuWk7gEc9zlJmQYtwKxM",
+  authDomain: "rdinazo-chess-game.firebaseapp.com",
+  projectId: "rdinazo-chess-game",
+  storageBucket: "rdinazo-chess-game.firebasestorage.app",
+  messagingSenderId: "469942196401",
+  appId: "1:469942196401:web:5e31b38db381f90b05aa90"
+};
+
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
+
+let analytics;
+if (typeof window !== 'undefined') {
+  analytics = getAnalytics(app);
+}
+
+console.log("Firebase Initialized");
